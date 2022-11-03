@@ -1,0 +1,814 @@
+$blue: #000055
+$magenta: #ff267e
+$green: #05C489
+$green-hover: #00AE78
+$grey: #EDEDED
+$text: #292929
+$greenBtn: #05C489
+
+$blue-back: #0F1933
+
+$violet: #2F2F6C
+
+$font-suisse-reg: SuisseIntl-Regular, sans-serif // 400
+$font-suisse-med: SuisseIntl-Medium, sans-serif // 500
+$font-suisse-semb: SuisseIntl-SemiBold, sans-serif // 600
+$font-wulkan: WulkanDisplay, sans-serif //
+
+
+body
+  -webkit-tap-highlight-color: rgba(0,0,0,0)
+  overscroll-behavior: none
+  color: $grey
+  height: 100%
+  background: $blue-back
+
+
+  img
+    max-width: 100%
+    height: auto
+
+//styles summary
+summary::-webkit-details-marker
+  display: none
+summary::marker
+  content: none
+
+[class*="__summary"]
+  cursor: pointer
+  font-family: $font-suisse-med
+  font-size: 16px
+  line-height: 21px
+  letter-spacing: 0.08em
+  color: $grey
+  padding: 26px 36px 24px
+  background: #141E50
+  border-radius: 10px
+  position: relative
+  transition: background-color .3s ease
+  &::before
+    content: ''
+    position: absolute
+    top: 47%
+    right: 36px
+    width: 14px
+    height: 14px
+    border-left: 3px solid $grey
+    border-bottom: 3px solid $grey
+    transform: translateY(-50%) rotate(-45deg)
+  &:hover
+    background: #17255D
+
+
+[class*="__details-text"]
+  padding: 45px 60px 40px 35px
+  background: #17255D
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25)
+  border-radius: 10px
+  margin-top: -15px
+  p
+    font-family: $font-suisse-reg
+    font-size: 14px
+    line-height: 24px
+    color: $grey
+    &:not(:last-child)
+      margin: 0 0 35px 0
+
+
+.wrapper-main
+  overflow: hidden
+  min-height: 100%
+  background: url("../img/ellipse.svg") no-repeat 50% 37%/cover
+
+
+/***********************************HOME SECTION***************************************/
+.home
+  display: flex
+  justify-content: center
+  position: relative
+  &__link
+    font-family: $font-suisse-semb
+    display: inline-block
+    padding: 26px 50px 24px
+    font-size: 16px
+    line-height: 21px
+    letter-spacing: 0.08em
+    text-transform: uppercase
+    color: $blue
+    background: $green
+    border-radius: 4px
+    transition: background-color .3s ease
+    &:hover
+      background: $green-hover
+  &__image
+    margin-left: -1px
+  &__title
+    display: flex
+    flex-direction: column
+    align-items: center
+    position: absolute
+    top: 180px
+    left: 50%
+    transform: translateX(-50%)
+
+    &-top
+      font-family: $font-suisse-med
+      white-space: nowrap
+      font-size: 68px
+      line-height: 56px
+      text-transform: uppercase
+      color: $grey
+      padding: 22px 18px 20px
+      background: $magenta
+    &-bottom
+      font-family: $font-suisse-med
+      white-space: nowrap
+      font-size: 68px
+      line-height: 56px
+      text-transform: uppercase
+      color: $grey
+      padding: 22px 18px 20px
+      background: $magenta
+      margin-top: -10px
+      margin-bottom: 60px
+      span
+        font-family: $font-wulkan
+  &__mouse
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    bottom: 183px
+    &-body
+      width: 42px
+      height: 60px
+      border: 3px solid $grey
+      border-radius: 100px
+      display: flex
+      justify-content: center
+      position: relative
+    &-wheel
+      position: absolute
+      top: 7px
+      left: 0
+      right: 0
+      margin: auto
+      width: 11px
+      height: 11px
+      border-radius: 100px
+      background: $grey
+      animation: scroll 1.8s infinite linear
+      @keyframes scroll
+        0%
+          transform: scaleY(1) translateY(0)
+        20%
+          transform: scaleY(1.5) translateY(5px)
+          height: 15px
+        60%
+          transform: scaleY(.7) translateY(15px)
+          opacity: 0
+        to
+          transform: scaleY(.5) translateY(0)
+          opacity: 0
+
+
+/***********************************PARTICIOATION SECTION***************************************/
+.participation
+  //position: relative
+  //background: url("../img/bg-block1-el.svg") no-repeat 50% 0/cover
+  &__container
+    max-width: 1310px
+    margin: 0 auto
+    padding: 0 0 0 60px
+
+  &__row
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+  &__info
+    max-width: 630px
+  &__title
+    font-family: $font-suisse-med
+    font-size: 50px
+    line-height: 52px
+    color: $grey
+    letter-spacing: 0.02em
+    margin: 0 0 55px 0
+    span
+      font-family: $font-wulkan
+  &__text
+    margin: 0 0 75px 0
+    p
+      font-family: $font-suisse-reg
+      font-size: 20px
+      line-height: 34px
+      color: $grey
+      &:not(:last-child)
+        margin: 0 0 40px 0
+      span
+        white-space: nowrap
+        background: $magenta
+        padding: 0px 4px 2px
+  &__image
+    min-width: 552px
+  &__button
+    display: inline-block
+    font-family: $font-suisse-semb
+    font-size: 16px
+    line-height: 21px
+    color: $blue
+    padding: 26px 52px 24px
+    background-color: $green
+    letter-spacing: 0.08em
+    text-transform: uppercase
+    border-radius: 4px
+    transition: background-color .3s ease
+    &:hover
+      background-color: $green-hover
+  //Вже бере участь
+  &__active
+    display: none
+    //display: inline-block
+    font-family: $font-suisse-semb
+    padding: 26px 40px 24px
+    font-size: 16px
+    line-height: 21px
+    letter-spacing: 0.08em
+    text-transform: uppercase
+    color: $grey
+    border: 1px solid $green
+    border-radius: 100px
+
+
+
+/***********************************FAQ SECTION***************************************/
+.faq
+  padding: 110px 0 260px 0
+  &__container
+    max-width: 1357px
+    margin: 0 auto
+    padding: 0 60px
+  &__title
+    font-family: $font-suisse-med
+    text-align: center
+    font-size: 50px
+    line-height: 52px
+    letter-spacing: 0.02em
+    color: $grey
+    margin: 0 0 95px 0
+    span
+      font-family: $font-wulkan
+  &__row
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__item
+    display: flex
+    align-items: center
+    justify-content: center
+    &:not(:last-child)
+      margin: 0 60px 0 0
+    &-image
+      display: block
+      margin: 0 21px 0 0
+    &-text
+      font-family: $font-suisse-reg
+      font-size: 20px
+      line-height: 34px
+      color: $grey
+      white-space: nowrap
+
+
+/***********************************TASK SECTION***************************************/
+.task
+  padding: 0 0 85px 0
+  &__container
+    padding: 0 60px
+    margin: 0 auto
+    max-width: 1260px
+  &__title
+    font-family: $font-suisse-med
+    font-size: 50px
+    line-height: 52px
+    color: $grey
+    margin: 0 0 75px 0
+    text-align: center
+  &__button
+    font-family: $font-suisse-semb
+    display: inline-block
+    font-size: 16px
+    line-height: 21px
+    color: $blue
+    letter-spacing: 0.08em
+    text-transform: uppercase
+    padding: 26px 72px 24px
+    background: $green
+    border-radius: 4px
+    transition: background-color .3s ease
+    &:hover
+      background: $green-hover
+    //Недоступне
+    &._nonactive
+      background: rgba(5, 196, 137, 0.3)
+      pointer-events: none
+  //состояние кнопки под слайдером
+  &__side
+    display: none
+    font-family: $font-suisse-semb
+    padding: 22px 38px 20px
+    font-size: 22px
+    line-height: 29px
+    letter-spacing: 0.08em
+    color: #EDEDED
+    border-radius: 100px
+    //В процесі
+    &._load
+      background: #A1A1A1
+    //Завершене
+    &._done
+      background: $magenta
+
+
+  &__info
+    display: flex
+    flex-direction: column
+    align-items: center
+    position: relative
+    margin: 0 0 95px 0
+    &::before
+      content: ''
+      position: absolute
+      top: 20px
+      right: -670px
+      width: 760px
+      height: 392px
+      background: url("../img/task-ticket-blur.png") no-repeat 50% 0%/contain
+      transition: opacity .3s ease
+    &::after
+      content: ''
+      position: absolute
+      top: 20px
+      left: -670px
+      width: 760px
+      height: 392px
+      background: url("../img/task-ticket-blur.png") no-repeat 50% 0%/contain
+      transition: opacity .3s ease
+    &.leftImageHidden::after
+      opacity: 0
+    &.rightImageHidden::before
+      opacity: 0
+    .task-wrap
+      display: flex
+      align-items: center
+      justify-content: center
+
+  &__slider
+    max-width: 855px
+    margin: 0 0 70px 0
+    &-wrapper
+      width: 825px
+      height: 428px
+      display: flex
+      align-items: center
+      justify-content: center
+      @media screen and (min-width: 551px)
+        background: url("../img/task-ticket-bg-desc.png") no-repeat 0 0/contain
+      @media screen and (min-width: 551px) and (max-width: 1024px)
+        background: url("../img/task-ticket-bg-desc.png") no-repeat 0 0/contain
+      @media screen and (max-width: 860px)
+        background: url("../img/task-ticket-bg-tab.png") no-repeat 0 0/contain
+      @media screen and (max-width: 550px)
+        background: url("../img/task-ticket-bg-tab.png") no-repeat 0 0/contain
+    &-info
+      width: 705px
+      height: 370px
+      border: 4.3px solid #0C1630
+      border-radius: 21.6px
+      display: grid
+      grid-template-rows: 270px 100px
+      grid-template-columns: 165px 540px
+    &-time
+      grid-row: 1/3
+      grid-column: 1/2
+      padding: 28px 17px
+      display: flex
+      flex-direction: column
+      align-items: center
+      border-right: 4.3px solid #0C1630
+      .time
+        font-family: $font-suisse-med
+        white-space: nowrap
+        font-size: 15px
+        line-height: 41px
+        color: #0D1731
+        padding: 5px 20px 3px
+        background: #DBDBDB
+        border-radius: 108.5px
+        margin: 0 0 20px 0
+        width: 100%
+        text-align: center
+      .text
+        font-family: $font-suisse-med
+        font-size: 15px
+        line-height: 41px
+        padding: 5px 20px 3px
+        color: $grey
+        border: 1px solid $magenta
+        border-radius: 108.5px
+        width: 100%
+        text-align: center
+
+    &-text
+      grid-row: 1/2
+      grid-column: 2/3
+      padding: 25px 58px 0 30px
+      font-family: $font-suisse-reg
+      font-size: 20px
+      line-height: 35px
+      color: $grey
+      border-bottom: 4.3px solid #0C1630
+    &-prize
+      grid-row: 2/3
+      grid-column: 2/3
+      display: flex
+      align-items: flex-start
+      padding: 22px 30px 0 30px
+      img
+        display: block
+        margin: 0 23px 0 0
+      p
+        font-family: $font-suisse-reg
+        font-size: 18px
+        line-height: 30px
+        color: $grey
+        max-width: 357px
+  &__details[open] > &__summary::before
+    top: 57%
+    transform: translateY(-50%) rotate(135deg)
+
+//controls slider styles
+.task-counter
+  display: none
+
+.task-controls
+  display: flex
+  align-items: center
+  justify-content: center
+  position: absolute
+  bottom: 10px
+  right: 0
+
+.controls-left,
+.controls-right
+  &.arrow-disabled
+    pointer-events: none
+
+
+.controls-left__arrow
+  width: 50px
+  height: 50px
+  border: 1px solid $green
+  border-radius: 50%
+  position: relative
+  margin: 0 20px 0 0
+  transition: background-color .3s ease
+  cursor: pointer
+  &::before
+    content: ''
+    position: absolute
+    width: 4.5px
+    height: 16px
+    border-radius: 20px
+    left: 47%
+    top: 11.8px
+    transform: translateX(-50%) rotate(45deg)
+    background: $green
+    transition: background-color .3s ease
+  &::after
+    content: ''
+    position: absolute
+    width: 4.5px
+    height: 16px
+    border-radius: 20px
+    left: 47%
+    bottom: 11.8px
+    transform: translateX(-50%) rotate(-45deg)
+    background: $green
+    transition: background-color .3s ease
+  &:hover::after,
+  &:hover::before
+    background: $green-hover
+  &:hover
+    background: rgba(5, 196, 137, 0.1)
+  &:active
+    background: rgba(5, 196, 137, 0.3)
+
+.controls-right__arrow
+  width: 50px
+  height: 50px
+  border: 1px solid $green
+  border-radius: 50%
+  position: relative
+  transition: background-color .3s ease
+  cursor: pointer
+  &.arrow-disabled
+    pointer-events: none
+  &::before
+    content: ''
+    position: absolute
+    width: 4.5px
+    height: 16px
+    border-radius: 20px
+    left: 53%
+    top: 11.8px
+    transform: translateX(-50%) rotate(-45deg)
+    background: $green
+    transition: background-color .3s ease
+  &::after
+    content: ''
+    position: absolute
+    width: 4.5px
+    height: 16px
+    border-radius: 20px
+    left: 53%
+    bottom: 11.8px
+    transform: translateX(-50%) rotate(45deg)
+    background: $green
+    transition: background-color .3s ease
+  &:hover::after,
+  &:hover::before
+    background: $green-hover
+  &:hover
+    background: rgba(5, 196, 137, 0.1)
+  &:active
+    background: rgba(5, 196, 137, 0.3)
+
+.slider
+  &.not-enough-elems
+    .slider-wrapper
+      display: none
+
+  &:not(.not-enough-elems)
+    display: flex
+    justify-content: space-between
+    > *:not(.slider-wrapper)
+      display: none
+
+.slider-wrapper
+  width: 100%
+  position: relative
+  overflow-x: hidden
+  overflow-y: hidden
+  &.prev
+    .slider-inner
+      transform: translateX(33.3333333%)
+      transition: all .3s ease
+      -webkit-transition: transform .3s ease
+      -webkit-transition: -webkit-transform .3s ease
+
+  &.next
+    .slider-inner
+      transform: translateX(-33.3333333%)
+      transition: all .3s ease
+      -webkit-transition: transform .3s ease
+      -webkit-transition: -webkit-transform .3s ease
+
+.slider-inner
+  width: 300%
+  display: flex
+  flex-flow: row nowrap
+  justify-content: flex-start
+  margin-left: -100%
+
+.slider-page
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex: 0 0 33.33333%
+  overflow-x: hidden
+  overflow-y: hidden
+  justify-content: center
+  transition: all .3s ease
+
+
+/***********************************PRIZE SECTION***************************************/
+.prize
+  padding: 0 0 140px 0
+  &__container
+    max-width: 1260px
+    margin: 0 auto
+    padding: 0 60px
+  &__row
+    display: flex
+    align-items: flex-start
+    margin: 0 0 125px 0
+  &__image
+    min-width: 640px
+    max-width: 765px
+    margin-left: -110px
+  &__title
+    font-family: $font-suisse-med
+    font-size: 50px
+    line-height: 52px
+    letter-spacing: 0.02em
+    color: $grey
+    margin: 0 0 20px 0
+  &__text
+    font-family: $font-suisse-reg
+    font-size: 18px
+    line-height: 30px
+    max-width: 460px
+    color: $grey
+    margin: 0 0 60px 0
+  &__list
+    display: grid
+    grid-template-columns: 50% 50%
+    gap: 35px
+  &__item
+    font-family: $font-suisse-reg
+    font-size: 20px
+    line-height: 32px
+    color: $grey
+    display: flex
+    align-items: center
+    &::before
+      content: ''
+      display: inline-block
+      margin: 0 15px 0 0
+      width: 13px
+      height: 13px
+      background: url("../img/arrow.svg") no-repeat 50% 0/contain
+  &__details[open] > &__summary::before
+    top: 57%
+    transform: translateY(-50%) rotate(135deg)
+
+
+/***********************************TOURNAMENT SECTION***************************************/
+.tournament
+  padding: 70px 0 105px 0
+  &__container
+    padding: 0 60px
+    margin: 0 auto
+    max-width: 1260px
+    display: flex
+    flex-direction: column
+    position: relative
+    &::after
+      content: ''
+      position: absolute
+      width: 480px
+      height: 750px
+      background: url("../img/Fireworks-left.svg") no-repeat 50% 0%/contain
+      top: -50px
+      left: -240px
+    &::before
+      content: ''
+      position: absolute
+      width: 480px
+      height: 750px
+      background: url("../img/fireworks-right.svg") no-repeat 50% 0%/contain
+      top: -40px
+      right: -240px
+
+  &__title
+    font-family: $font-suisse-med
+    font-size: 50px
+    line-height: 52px
+    letter-spacing: 0.02em
+    color: $grey
+    text-align: center
+    margin: 0 0 65px 0
+    span
+      font-family: $font-wulkan
+  &__details[open] > &__summary::before
+    top: 57%
+    transform: translateY(-50%) rotate(135deg)
+  &__details
+    margin: 0 0 75px 0
+  &__button
+    display: inline-block
+    align-self: center
+    font-family: $font-suisse-semb
+    font-size: 16px
+    line-height: 21px
+    letter-spacing: 0.08em
+    text-transform: uppercase
+    color: $blue
+    padding: 26px 50px 24px
+    border-radius: 4px
+    background: $green
+    transition: background-color .3s ease
+    &:hover
+      background: $green-hover
+
+
+.resultTable
+  padding: 35px 30px 50px 35px
+  background: #0A142C
+  border-radius: 25px
+  margin: 0 0 55px 0
+  position: relative
+  z-index: 3
+  &__head
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    margin: 0 0 30px 0
+    &-check,
+    &-points,
+    &-prize
+      width: 25%
+      display: flex
+      justify-content: center
+      font-family: $font-suisse-med
+      font-size: 16px
+      line-height: 21px
+      letter-spacing: 0.08em
+      color: #D9D9D9
+    &-prize
+      padding: 0 103px 0 0
+    &-points
+      padding: 0 39px 0 0
+    &-check
+      padding: 0 29px 0 0
+  &__body
+    height: 475px
+    overflow-y: scroll
+    padding: 0 25px 0 0
+    &::-webkit-scrollbar
+      width: 6px
+      background: rgba(217, 217, 217, 0.2)
+      border-radius: 100px
+      margin: 0 0 0 50px
+    &::-webkit-scrollbar-thumb
+      background: $magenta
+      border-radius: 100px
+    &-number,
+    &-check,
+    &-points,
+    &-prize
+      height: 80px
+      width: 25%
+      display: flex
+      justify-content: center
+      align-items: center
+      font-family: $font-suisse-med
+      font-size: 16px
+      line-height: 23px
+      letter-spacing: 0.08em
+      color: $grey
+      text-align: center
+    &-points._active
+      color: $magenta
+    &-number span
+      color: $magenta
+      margin: 0 0 0 5px
+    &-number
+      position: relative
+      display: flex
+      justify-content: flex-start
+      padding-left: 60px
+    &-prize
+      padding-right: 70px
+    &-item
+      background: #0D1A43
+      border-radius: 100px
+      display: flex
+      align-items: center
+      &:not(:last-child)
+        margin: 0 0 20px 0
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(4)
+        .resultTable__body-number:after
+          content: ''
+          background: url("../img/star-tournamnet.svg") no-repeat 50% 0/contain
+          width: 22px
+          height: 22px
+          margin: 0 0 0 15px
+
+
+/***********************************RULES SECTION***************************************/
+.rules
+  padding: 0 0 85px 0
+  &__container
+    padding: 0 60px
+    margin: 0 auto
+    max-width: 1260px
+  &__details[open] > &__summary::before
+    top: 57%
+    transform: translateY(-50%) rotate(135deg)
+  &__details-text
+    padding-right: 30px
+    .wrapper
+      height: 540px
+      overflow-y: scroll
+      padding-right: 25px
+      &::-webkit-scrollbar
+        width: 6px
+        background: rgba(217, 217, 217, 0.2)
+        border-radius: 100px
+        margin: 0 0 0 50px
+      &::-webkit-scrollbar-thumb
+        background: $magenta
+        border-radius: 100px
+
