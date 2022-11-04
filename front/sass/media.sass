@@ -1,715 +1,409 @@
-@media screen and (min-width: 2050px)
-  .wrapper-main
-    background: url(../img/ellipse.svg) no-repeat 50% 18%/cover
+
+
+
+@media screen and (max-width: 1510px)
   .home
-    &__title
-      transform-origin: top
-      transform: translateX(-50%) scale(1.3)
+    &__prize
+      transform-origin: top center
+      transform: scale(0.9)
+    &__prize4
+      transform-origin: right center
+      transform: scale(0.85)
+    &__prize5
+      transform-origin: center
+      transform: scale(0.8)
 
-@media screen and (max-width: 1700px)
+@media screen and (max-width: 1290px)
   .home
-    &__title
-      top: 170px
-
-@media screen and (max-width: 1450px)
-  .home
-    &__title
-      top: 140px
-    &__mouse
-      bottom: 100px
-
-@media screen and (max-width: 1366px)
-  body
-    background: $blue-back
-  .wrapper-main
-    background: none
-  .participation
-    position: relative
-    z-index: 6
-    &::before
-      content: ''
-      position: absolute
-      width: 1013.08px
-      height: 552px
-      right: -249px
-      bottom: -334px
-      background: rgba(42, 67, 137, 0.8)
-      filter: blur(250px)
-      transform: rotate(-30deg)
-      z-index: -1
-  .faq
-    position: relative
-    z-index: 6
-    &::after
-      content: ''
-      position: absolute
-      width: 1337.18px
-      height: 1090.23px
-      right: -854px
-      bottom: -450px
-      background: rgba(255, 38, 126, 0.1)
-      filter: blur(250px)
-      transform: rotate(122.89deg)
-  .task
-    position: relative
-    z-index: 6
-    &::after
-      content: ''
-      position: absolute
-      width: 953.4px
-      height: 519.48px
-      left: -652px
-      bottom: -249px
-      background: rgba(101, 136, 233, 0.8)
-      filter: blur(511.337px)
-      transform: rotate(14.19deg)
-  .prize
-    position: relative
-    z-index: 6
-    &::after
-      content: ''
-      position: absolute
-      width: 953.4px
-      height: 519.48px
-      right: -1176px
-      bottom: 236px
-      background: rgba(101, 136, 233, 0.8)
-      filter: blur(511.337px)
-      transform: rotate(14.19deg)
-  .tournament
-    position: relative
-    z-index: 6
-
-
-
-
-@media screen and (max-width: 1280px)
-  .home
-    &__title
-      top: 105px
-      &-top,
-      &-bottom
-        font-size: 49px
-        line-height: 41px
-        padding: 16px 14px 14px
-      &-bottom
-        margin-top: -7px
-    &__mouse
-      bottom: 70px
-
-@media screen and (max-width: 1180px)
-  .home
-    &__link
-      display: none
-  .participation
+    &__prize
+      transform: scale(0.8)
+    &__prize4
+      transform: scale(0.75)
+    &__prize5
+      transform-origin: center
+      transform: scale(0.7)
+    &__prize1
+      left: 51px
+    &__info
+      flex-direction: column
+      align-items: stretch
+      padding: 76px 106px 165px
     &__text
-      margin: 0 0 70px 0
-      p
-        font-size: 16px
-        line-height: 30px
+      margin: 0 0 150px 0
 
-        &:not(:last-child)
-          margin: 0 0 35px 0
-
-    &__image
-      position: relative
-      right: 80px
-
-    &__title
-      white-space: nowrap
-  .faq
-    padding: 115px 0 205px 0
-
-    &__item
-      &:not(:last-child)
-        margin: 0 0 0 0
-
-      img
-        max-width: 75px
-        margin: 0 15px 0 0
-
-      &-text
-        font-size: 14px
-        line-height: 24px
-  .task
-    padding: 0 0 160px 0
-
-    &__info
-      &::before
-        right: -739px
-
-      &::after
-        left: -739px
-
-
-@media screen and (max-width: 1024px)
-  .home
-    &__title
-      top: 190px
-
-    &__mouse
-      bottom: auto
-      top: 570px
-
-@media screen and (max-width: 980px)
-  .home
-    &__title
-      top: 90px
-
-    &__mouse
-      bottom: 90px
-      top: auto
-  .participation
-    &__row
-      flex-direction: column
-      align-items: center
-
-    &__title
-      white-space: pre-wrap
-
-    &__image
-      position: static
-      right: auto
-
-    &__container
-      padding: 0 60px
-
-    &__info
+    &__img
       max-width: 100%
-      margin: 0 0 50px 0
-  .faq
-    &__row
-      display: grid
-      grid-template-columns: calc(50% - 15px) calc(50% - 15px)
-      gap: 80px 30px
-
-    &__item
-      display: flex
-      flex-direction: column
-
-      img
-        max-width: 100%
-        margin: 0 0 30px 0
-
-      &-text
-        font-size: 33px
-        line-height: 53px
-        white-space: normal
-        text-align: center
-  .task
-    padding: 0 0 160px 0
-    &__info
       &::before,
       &::after
-        content: none
-        background: none
-
-    &__title
-      font-size: 64px
-      line-height: 83px
-      margin: 0 0 35px 0
-  .prize
-    &__row
-      flex-direction: column-reverse
-      align-items: center
-      margin: 0 0 80px 0
-    &__image
-      margin: 0
-    &__title
-      text-align: center
-    &__text
-      text-align: center
-
-@media screen and (max-width: 860px)
-  .task-counter
-    display: flex
-    font-size: 52px
-    line-height: 63px
-    position: absolute
-    left: 0
-    bottom: 0
-    .active-slide,
-    .all-slide,
-    span
-      font-family: $font-suisse-med
-
-  .task
-    &__info
-      margin: 0 0 160px 0
-      &::after
-        content: ''
-        position: absolute
-        top: 20px
-        left: -72px
-        width: 70px
-        height: 755px
-        background: url("../img/task-ticket-blur-min-tab.png") no-repeat 50% 0%/contain
+        height: 90px
       &::before
-        content: ''
-        position: absolute
-        transform: scale(-1)
-        top: 20px
-        right: -72px
-        width: 70px
-        height: 755px
-        background: url("../img/task-ticket-blur-min-tab.png") no-repeat 50% 0%/contain
+        top: -112px
+      &::after
+        bottom: -112px
 
-    &__slider
-      max-width: 620px
-      &-wrapper
-        width: 587px
-        height: 756px
-      &-info
-        width: 494px
-        height: 597px
-        display: flex
-        flex-direction: column
-        border: 4px solid #0C1630
-        border-radius: 29px
+@media screen and (max-width: 1200px)
+  .home
+    &__prize
+      transform: scale(0.7)
+    &__prize4
+      transform: scale(0.65)
+    &__prize5
+      transform: scale(0.55)
+    &__prize1
+      left: -56px
+    &__prize2
+      top: -366px
+      right: 72px
+    &__prize3
+      top: -32px
+      right: -86px
+    &__prize5
+      left: -418px
 
-      &-time
-        padding: 31px 33px 24px
-        border: none
-        border-bottom: 4px solid #0C1630
-        flex-direction: row
 
-        .time
-          margin: 0 20px 0 0
-          font-size: 22px
-          line-height: 57px
-          padding: 8px 20px 6px
-          border: 2px solid #DBDBDB
 
-        .text
-          margin: 0
-          padding: 8px 20px 6px
-          font-size: 22px
-          line-height: 57px
-          border: 2px solid $magenta
+@media screen and (max-width: 1140px)
+  .home
+    &__img
+      &::before
+        top: -105px
 
-      &-text
-        font-size: 28px
-        line-height: 45px
-        padding: 22px 32px
-        flex: 1 1 auto
-        border: none
-        border-bottom: 4px solid #0C1630
+@media screen and (max-width: 1040px)
+  .home
+    &__img
+      &::before
+        top: -95px
 
-      &-prize
-        padding: 13px 31px 60px
-
+@media screen and (max-width: 940px)
+  .home
+    padding: 260px 0 105px 0
+    &__prize1
+      left: -30px
+      top: -296px
+      transform: scale(0.73)
+    &__prize2
+      top: -290px
+      right: -115px
+      transform: scale(0.75) rotate(14.94deg)
+    &__prize3
+      transform: scale(0.6)
+      top: 119px
+      right: -81px
+    &__prize4
+      transform: scale(0.7) rotate(-13.82deg)
+      top: 231px
+      right: -162px
+    &__prize5
+      transform: scale(0.55)
+      left: -380px
+      top: 78px
+    &__title
+      margin: 0 0 50px 0
+      &-top
         img
-          width: 50px
+          max-width: 58px
+          margin: 0 8px 0 0
+        span
+          font-size: 76px
+          line-height: 99px
+      &-bottom
+        margin-top: -8px
+        img
+          max-width: 70px
+          margin: 0 10px
+        span
+          font-size: 76px
+          line-height: 105px
 
-        p
-          font-size: 22px
-          line-height: 38px
     &__button
-      position: relative
-      top: 110px
+      flex-direction: column-reverse
+      margin: 0 0 265px 0
+      &-one
+        margin: 0
+        text-align: center
+        font-size: 22px
+        line-height: 29px
+        padding: 26px 75px 24px
+      &-two
+        margin: 0 0 30px 0
+        font-size: 24px
+        line-height: 31px
+        padding: 26px 75px 24px
+    &__mouse
+      display: none
+    &__info
+      padding: 70px 26px 124px
+    &__text
+      margin: 0 0 125px 0
+      p
+        font-size: 24px
+        line-height: 35px
+        max-width: 100%
+        &:not(:last-child)
+          margin: 0 45px 0 0
+    &__img
+      &::before
+        top: -90px
+      &::after
+        bottom: -105px
+  .participate
+    &__title
+      font-size: 54px
+      line-height: 61px
+      margin: 0 0 115px 0
+      &::before
+        right: -105px
+      &::after
+        left: -105px
+    &__list
+      margin: 0 0 55px 0
+    &__button
+      padding: 26px 117px 24px
+      font-size: 24px
+      line-height: 31px
+    &__item
+      &-img
+        margin: 0 0 42px 0
+        img
+          margin: 17px 0
+      &-text
+        font-size: 36px
+        line-height: 47px
+    &__item:nth-child(odd)
+      min-width: 612px
+      padding: 57px 36px 53px
+      .participate__item-img
+        &::before,
+        &::after
+          height: 70px
+    &__item:nth-child(even)
+      min-width: 406px
+      padding: 57px 36px 53px
+      .participate__item-img
+        &::before,
+        &::after
+          height: 70px
+
+
+@media screen and (max-width: 845px)
+  .home
+    &__text
+      margin: 0 0 115px 0
+    &__img
+      &::before
+        top: -80px
 
 @media screen and (max-width: 770px)
-  .wrapper-main
-    position: relative
-    z-index: 5
-    top: -330px
-    padding: 330px 0 0 0
   .home
-    &__mouse
-      display: none
-
-    &__title
-      display: flex
-      flex-direction: column
-      align-items: flex-start
-      position: absolute
-      top: 0
-      left: 0
-      transform: translateX(0)
-
-      &-top,
-      &-bottom
-        font-size: 69px
-        line-height: 58px
-  .participation
-    position: relative
-
-    .info-participation
-      position: absolute
-      top: -330px
-      left: 50%
-      transform: translateX(-50%)
-      width: 86%
-
-    &__button
-      font-size: 30px
-      line-height: 39px
-      padding: 46px 46px 44px
-      width: 100%
-      text-align: center
-
-    &__info
-      margin: -100px 0 50px 0
-
-    &__image
-      width: 130%
-
     &__text
-      margin: 0
-  .faq
-    padding: 0 0 135px 0
-
-    &__title
-      font-size: 64px
-      line-height: 83px
-      margin: 0 0 100px 0
-  .task
-    padding: 0 0 90px 0
-  .prize
-    padding: 0 0 80px 0
-    &__image
-      width: 120%
-    &__row
-      margin: 0 0 25px 0
-    &__title
-      font-size: 64px
-      line-height: 83px
-      margin: 0 0 40px 0
-    &__text
-      font-size: 30px
-      line-height: 56px
-      margin: 0 0 65px 0
-      text-align: start
-      max-width: 100%
-    &__item
-      font-size: 30px
-      line-height: 56px
+      margin: 0 0 120px 0
+    &__img
+      min-width: 100%
       &::before
-        width: 24px
-        height: 24px
-  .tournament
+        top: -85px
+
+@media screen and (max-width: 750px)
+  .participate
     &__title
-      font-size: 64px
-      line-height: 98px
-    &__button
-      padding: 44px 30px 42px
-      width: 100%
-      font-size: 30px
-      line-height: 39px
-      text-align: center
-
-
-@media screen and (max-width: 720px)
-  .task
-    &__info
-      &::after,
-      &::before
-        content: none
-  .tournament
-    &__container
-      padding: 0 15px
-
-
-
-
-
-@media screen and (max-width: 600px)
-  body
-    background: #0F1933
-    //background: linear-gradient(180deg, #0C1630 2.82%, #111A46 19.3%, #0F1835 41.77%, #111B40 61.74%, #0E1831 92.7%)
-  .wrapper-main
-    background: none
-
-  [class*="__summary"]
-    font-size: 14px
-    line-height: 18px
-    padding: 22px 22px 20px
-    &::before
-      right: 22px
-      width: 12px
-      height: 12px
-
-
-  [class*="__details-text"]
-    padding: 25px 20px
-    p
-      &:not(:last-child)
-        margin: 0 0 15px 0
-
-  .home
-    &__title
-      &-top,
-      &-bottom
-        padding: 9px 10px 7px
-        font-size: 37px
-        line-height: 31px
-
-      &-bottom
-        margin-top: -1px
-  .participation
-    position: relative
-    z-index: 3
-    &::before
-      content: ''
-      position: absolute
-      width: 639.97px
-      height: 422.38px
-      bottom: 0
-      right: 10px
-      z-index: -1
-      background: #2A4389
-      filter: blur(250px)
-      transform: rotate(14.19deg)
-    &__button
-      font-size: 16px
-      line-height: 21px
-      padding: 26px 25px 24px
-
-    .info-participation
-      width: 92%
-      top: -120px
-
-    &__container
-      padding: 0 15px
-
-    &__info
-      margin: 0px 0 50px 0
-
-    &__title
-      font-size: 34px
-      line-height: 42px
-      text-align: center
-      margin: 0 0 30px 0
-
-    &__text
-      p
-        font-size: 18px
-        line-height: 28px
-
-        &:not(:last-child)
-          margin: 0 0 30px 0
-
-    &__info
-      margin: 0 0 20px 0
-
-    &__image
-      width: 130%
-  .faq
-    padding: 0 0 45px 0
-    position: relative
-    &::before
-      content: ''
-      position: absolute
-      width: 332.72px
-      height: 271.27px
-      right: 230px
-      top: 203px
-      background: rgba(255, 38, 126, 0.4)
-      filter: blur(200px)
-      transform: rotate(122.89deg)
-    &__container
-      padding: 0 15px
-      position: relative
-      z-index: 5
-    &__row
-      gap: 45px 15px
-      grid-template-columns: calc(50% - 7.5px) calc(50% - 7.5px)
-      justify-items: center
-      align-items: center
-
-    &__item
-
-      img
-        margin: 0 0 15px 0
-        max-width: 80px
-
-      &-text
-        font-size: 18px
-        line-height: 28px
-        white-space: normal
-
-    &__title
-      font-size: 34px
-      line-height: 44px
-      margin: 0 0 55px 0
-  .task
-    position: relative
-    z-index: 6
-    &::after
-      content: ''
-      position: absolute
-      width: 639.97px
-      height: 422.38px
-      bottom: 0
-      left: 50px
-      background: #2A4389
-      filter: blur(250px)
-      z-index: -1
-
-    .task-counter
-      font-size: 28px
-      line-height: 71px
-    &__container
-      padding: 0 15px
-    .task-wrap
-      transform-origin: top center
-      transform: scale(0.7)
-      margin: 0 0 -265px 0
-    &__title
-      font-size: 34px
-      line-height: 44px
-      margin: 0 0 20px 0
-  .prize
-    padding: 0 0 45px 0
-    position: relative
-    z-index: 6
-    &::after
-      content: ''
-      position: absolute
-      width: 639.97px
-      height: 422.38px
-      bottom: 0
-      left: 50px
-      background: #2A4389
-      filter: blur(250px)
-      z-index: -1
-    &__container
-      padding: 0 15px
-    &__list
-      gap: 0
-      row-gap: 25px
-      column-gap: 10px
-    &__title
-      font-size: 34px
-      line-height: 44px
-      margin: 0 0 25px 0
-    &__text
-      font-size: 16px
-      line-height: 30px
-      margin: 0 0 35px 0
-    &__item
-      font-size: 16px
-      line-height: 30px
-      &::before
-        width: 13px
-        height: 13px
-    &__image
-      min-width: 400px
-  .tournament
-    padding: 0 0 70px 0
-    position: relative
-    z-index: 6
-    &::after
-      content: ''
-      position: absolute
-      width: 639.97px
-      height: 422.38px
-      bottom: 0
-      left: -560px
-      background: rgba(255, 38, 126, 0.4)
-      filter: blur(250px)
-      z-index: -1
-    &__container
+      font-size: 44px
+      line-height: 51px
       &::before,
       &::after
-        content: none
-        background: none
-    &__title
-      font-size: 34px
-      line-height: 52px
-      text-align: center
-      margin: 0 0 25px 0
-    &__button
-      font-size: 16px
-      line-height: 21px
-      padding: 25px 20px 23px
-    &__details
-      margin: 0 0 40px 0
-  .resultTable
-    margin: 0 0 25px 0
-    padding: 24px 13px 20px
-    &__head
-      margin: 0 0 17px 0
-      &-check,
-      &-points,
-      &-prize
-        font-size: 11px
-        line-height: 14px
-      &-prize
-        padding: 0 55px 0 0
-      &-points
-        padding: 0 54px 0 0
-      &-check
-        padding: 0 50px 0 0
-    &__body
-      padding: 0 10px 0 0
-      height: 350px
-      &-item
-        &:nth-child(2),
-        &:nth-child(3),
-        &:nth-child(4)
-          .resultTable__body-number:after
-            content: ''
-            background: url("../img/star-tournamnet.svg") no-repeat 50% 0/contain
-            width: 15px
-            height: 15px
-            margin: 0 0 0 10px
-          .resultTable__body-number
-            font-size: 16px
-            line-height: 21px
-      &::-webkit-scrollbar
-        width: 2px
-        background: rgba(217, 217, 217, 0.2)
-        border-radius: 100px
-        margin: 0 0 0 50px
-      &-number,
-      &-check,
-      &-points,
-      &-prize
-        height: 70px
-        font-size: 11px
-        line-height: 14px
-      &-number
-        padding-left: 20px
-        width: 21%
-      &-prize
-        padding-right: 20px
-        width: 29%
+        width: 80px
+        height: 30px
+      &::before
+        right: -85px
+      &::after
+        left: -85px
 
-  .rules
-    position: relative
-    z-index: 6
+@media screen and (max-width: 710px)
+  .home
+    &__text
+      margin: 0 0 115px 0
+    &__img
+      &::before
+        top: -75px
+
+@media screen and (max-width: 680px)
+  .home
+    padding: 180px 0 55px 0
+    &__prize1
+      left: -122px
+      top: -231px
+      transform: scale(0.6)
+    &__prize2
+      top: -209px
+      right: -195px
+      transform: scale(0.45) rotate(-0.06deg)
+    &__prize3
+      transform: scale(0.4)
+      top: 92px
+      right: -118px
+    &__prize4
+      transform: scale(0.4) rotate(0.15deg)
+      top: 55px
+      right: -131px
+    &__prize5
+      transform: scale(0.35)
+      left: -443px
+      top: -196px
+    &__title
+      margin: 0 0 145px 0
+      &-top
+        img
+          max-width: 37px
+          margin: 0 8px 0 0
+        span
+          font-size: 40px
+          line-height: 52px
+      &-bottom
+        margin-top: -5px
+        img
+          max-width: 43px
+          margin: 0 7px
+        span
+          font-size: 40px
+          line-height: 55px
+    &__button
+      position: relative
+      z-index: 2
+      margin: 0 0 45px 0
+      &-one
+        font-size: 18px
+        line-height: 23px
+        padding: 18px 95px 16px
+      &-two
+        margin: 0 0 15px 0
+        font-size: 18px
+        line-height: 23px
+        padding: 19px 71px 17px
+    &__img
+      width: 100%
+      &::before
+        top: -70px
     &__container
       padding: 0 15px
-    &__details-text
-      padding-right: 12px
-      .wrapper
-        padding-right: 12px
-        &::-webkit-scrollbar
-          width: 4px
+    &__info
+      padding: 46px 15px 125px
+    &__text
+      margin: 0 0 100px 0
+      p
+        font-size: 18px
+        line-height: 23px
+        &:not(:last-child)
+          margin: 0 0 25px 0
+  .participate
+    &__title
+      font-size: 28px
+      line-height: 35px
+      margin: 0 0 40px 0
+      &::before,
+      &::after
+        width: 62px
+        height: 27px
+      &::before
+        right: -74px
+      &::after
+        left: -74px
+    &__list
+      padding: 0 15px
+      margin: 0 0 45px 0
+    &__item
+      &:not(:last-child)
+        margin: 0 8px 0 0
+      &-img
+        margin: 0 0 20px 0
+        img
+          margin: 7px 0
+      &-text
+        font-size: 22px
+        line-height: 29px
+    &__item:nth-child(odd)
+      min-width: 310px
+      padding: 26px 16px 19px
+      .participate__item-img
+        &::before,
+        &::after
+          height: 36px
+    &__item:nth-child(even)
+      min-width: 204px
+      padding: 26px 16px 19px
+      .participate__item-img
+        &::before,
+        &::after
+          height: 36px
+    &__button
+      font-size: 18px
+      line-height: 23px
+      padding: 19px 103px 17px
 
 
 
-@media screen and (max-width: 440px)
-  .participation
-    &__image
-      width: 140%
-      min-width: auto
-  .task
-    .task-wrap
-      transform: scale(0.6)
-      margin: 0 0 -350px 0
+@media screen and (max-width: 535px)
+  .home
+    &__text
+      margin: 0 0 80px 0
+    &__img
+      &::before
+        top: -60px
+    &__info
+      padding: 46px 15px 104px
 
-@media screen and (max-width: 374px)
-  .task
-    .task-wrap
-      transform: scale(0.5)
-      margin: 0 0 -425px 0
+@media screen and (max-width: 430px)
+  .home
+    &__text
+      margin: 0 0 65px 0
+    &__img
+      &::before
+        top: -45px
+      &::after
+        bottom: -100px
+    &__info
+      padding: 46px 15px 80px
 
+@media screen and (max-width: 390px)
+  .home
+    &__img
+      &::before
+        top: -40px
+      &::after
+        bottom: -100px
+    &__info
+      padding: 46px 15px 80px
 
-@media screen and (max-width: 950px) and (max-height: 450px) and (orientation: landscape)
-  body
-    //background: linear-gradient(180deg, #0C1630 2.82%, #111A46 19.3%, #0F1835 41.77%, #111B40 61.74%, #0E1831 92.7%)
-    background: #0F1933
-  .wrapper-main
-    background: none
+@media screen and (max-width: 370px)
+  .home
+    &__button
+      width: 100%
+      &-one
+        text-align: center
+        width: 100%
+        padding: 18px 10px 16px
+      &-two
+        text-align: center
+        width: 100%
+        padding: 19px 10px 17px
+  .participate
+    &__button
+      text-align: center
+      padding: 19px 30px 17px
+      width: 91%
+
+@media screen and (max-width: 350px)
+  .home
+    &__text
+      margin: 0 0 55px 0
+      p
+        &:not(:last-child)
+          margin: 0 0 20px 0
+    &__img
+      &::before
+        top: -35px
+      &::after
+        bottom: -100px
+    &__info
+      padding: 38px 15px 71px
+  .participate
+    &__title
+      font-size: 23px
+      line-height: 30px

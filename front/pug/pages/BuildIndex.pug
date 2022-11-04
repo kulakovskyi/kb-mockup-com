@@ -1,17 +1,217 @@
-section.home
-    picture.home__image
-        source(media="(min-width: 1025px) " srcset="img/home-photo-desc.jpg")
-        source(media="(min-width: 771px) and (max-width: 1024px) " srcset="img/home-photo-tab.jpg")
-        source(media="(min-width: 551px) and (max-width: 770px)" srcset="img/home-photo-tab-min.jpg")
-        source(media="(max-width: 550px)" srcset="img/home-photo-mob.jpg")
-        img(src="img/home-photo-desc.jpg" alt="Favbet")
-    h1.home__title
-        .home__title-top Kod kuće kao
-        .home__title-bottom na #[span stadionu]
-        a(href='#').home__link Взяти участь
-    .home__mouse
-        .home__mouse-body
-            .home__mouse-wheel
+.wrapper
+    section.home
+        .home__container
+            .home__prize1.home__prize
+            .home__prize2.home__prize
+            .home__prize3.home__prize
+            .home__prize4.home__prize
+            .home__prize5.home__prize
+            h1.home__title
+                .home__title-top
+                    img(src='img/home/ball.png' alt='ball')
+                    span Футбол
+                .home__title-bottom
+                    span там, де
+                    img(src='img/home/heart.png' alt='ball')
+                    span ти
+            .home__button
+                a(href='#').home__button-one
+                    .blur
+                    span Participate
+                a(href='#').home__button-two you participate
+            .home__mouse
+                .home__mouse-body
+                    .home__mouse-wheel
+                .home__mouse-text Scroll down
+            .home__info
+                    .home__text
+                        p.
+                            Ми знаємо, що зараз не до футболу. І не до чемпіонату світу.
+                            Але знаємо, що #[span жага до гри - на все життя.]
+                        p.
+                            Тому #[span хочемо підтримати] жагу до гри тих, хто хоче слідкувати за
+                            найочікуванішим футбольним турніром.
+                        p.
+                            Підтримати тих, хто сидить в окопі і тих, хто в укритті.
+                            Хто евакуюється та тих, хто в дорозі по волонтерським справам.
+                        p.
+                            Бо футбол не на стадіоні і не перед телевізором. #[span Футбол, там де ти.]
+                            Бери участь в акції та вигравай призи, які допоможуть дивитися футбол будь-де.
+                    .home__img
+                        img(src='img/home/fist-ukraine.png' alt='fist')
+    section.participate
+        .participate__container
+            h2.participate__title How to #[span participate]?
+            ul.participate__list
+                li.participate__item
+                    .participate__item-img
+                        img(src='img/participate/img-1.png' alt='img-participate')
+                    p.participate__item-text Press the button #[br] #[span “Take part”]
+
+                li.participate__item
+                    .participate__item-img
+                        img(src='img/participate/img-2.png' alt='img-participate')
+                    p.participate__item-text Compete #[br] #[span the task]
+
+                li.participate__item
+                    .participate__item-img
+                        img(src='img/participate/img-3.png' alt='img-participate')
+                    p.participate__item-text Get guaranteed #[br] #[span prizes]
+
+                li.participate__item
+                    .participate__item-img
+                        img(src='img/participate/img-4.png' alt='img-participate')
+                    p.participate__item-text Collect #[br] #[span points]
+
+                li.participate__item
+                    .participate__item-img
+                        img(src='img/participate/img-5.png' alt='img-participate')
+                    p.participate__item-text Take part in #[br] #[span the final draw]
+            a(href='#').participate__button таке part
+
+section.tasks
+    .tasks__container
+        h2.tasks__title Tasks
+        .task-controls
+            .controls-left.arrow-disabled
+                .controls-left__arrow.controls-slider-left
+            .task-counter
+                .active-slide 1
+                span.from from
+                .all-slide 8
+                span.period period
+            .controls-right
+                .controls-right__arrow.controls-slider-right
+        .tasks__slider#tasks-slider
+            .tasks__slider-item
+                .tasks__slider-wrap
+                    .tasks__slider-info
+                        .tasks__slider-text.
+                            Наберите #[span 15 баллов],
+                            сделав ставку на лайв событие
+                        a(href='#').tasks__slider-button Place bets
+                    .tasks__slider-bonus
+                        .tasks__slider-back
+                        .tasks__slider-bonus-wrapper
+                            .tasks__slider-img
+                                img(src='img/task/slide-1.png' alt='slide')
+                            .tasks__slider-descr.
+                                min bet
+                                #[span 150 UAH]
+            .tasks__slider-item
+                .tasks__slider-wrap
+                    .tasks__slider-info
+                        .tasks__slider-text.
+                            Наберите #[span 15 баллов],
+                            сделав ставку на лайв событие
+                        a(href='#').tasks__slider-button Place bets
+                    .tasks__slider-bonus
+                        .tasks__slider-back
+                        .tasks__slider-bonus-wrapper
+                            .tasks__slider-img
+                                img(src='img/task/slide-1.png' alt='slide')
+                            .tasks__slider-descr.
+                                min bet
+                                #[span 150 UAH]
+            .tasks__slider-item
+                .tasks__slider-wrap
+                    .tasks__slider-info
+                        .tasks__slider-text.
+                            Наберите #[span 15 баллов],
+                            сделав ставку на лайв событие
+                        a(href='#').tasks__slider-button Place bets
+                    .tasks__slider-bonus
+                        .tasks__slider-back
+                        .tasks__slider-bonus-wrapper
+                            .tasks__slider-img
+                                img(src='img/task/slide-1.png' alt='slide')
+                            .tasks__slider-descr.
+                                min bet
+                                #[span 150 UAH]
+        details.tasks__details
+            summary.tasks__summary How does it work?
+            .tasks__details-text
+                .task__details-wrapper
+                    p.
+                        Домашній стадіон, який пам'ятає легендарні перемоги та буденні ляпи.
+                        Де ти готуєшся до нового дня, як до наступного матчу.
+                        Тут все просякнуте твоєю енергетикою. Бо твій дім - твій домашній стадіон.
+                        Цієї зими ми допоможемо прокачати його для перегляд спору.
+                        Бери участь в акції та вигравай телевізори, стереосистеми та домашні кінотеатри.
+                        Вболівай вдома , як на стадіоні.Домашній стадіон, який пам'ятає легендарні перемоги та буденні ляпи.
+                        Де ти готуєшся до нового дня, як до наступного матчу.
+                        Тут все просякнуте твоєю енергетикою.
+                        Бо твій дім - твій домашній стадіон.
+                        Цієї зими ми допоможемо прокачати його для перегляд спору.
+                        Бери участь в акції та вигравай телевізори, стереосистеми та домашні кінотеатри.
+                        Вболівай вдома , як на стадіоні.
+                    p.
+                        Домашній стадіон, який пам'ятає легендарні перемоги та буденні ляпи.
+                        Де ти готуєшся до нового дня, як до наступного матчу.
+                        Тут все просякнуте твоєю енергетикою. Бо твій дім - твій домашній стадіон.
+                        Цієї зими ми допоможемо прокачати його для перегляд спору.
+                        Бери участь в акції та вигравай телевізори, стереосистеми та домашні кінотеатри.
+                        Вболівай вдома , як на стадіоні.Домашній стадіон, який пам'ятає легендарні перемоги та буденні ляпи.
+                        Де ти готуєшся до нового дня, як до наступного матчу.
+                        Тут все просякнуте твоєю енергетикою.
+                        Бо твій дім - твій домашній стадіон.
+                        Цієї зими ми допоможемо прокачати його для перегляд спору.
+                        Бери участь в акції та вигравай телевізори, стереосистеми та домашні кінотеатри.
+                        Вболівай вдома , як на стадіоні.
+                    p.
+                        Домашній стадіон, який пам'ятає легендарні перемоги та буденні ляпи.
+                        Де ти готуєшся до нового дня, як до наступного матчу.
+                        Тут все просякнуте твоєю енергетикою. Бо твій дім - твій домашній стадіон.
+                        Цієї зими ми допоможемо прокачати його для перегляд спору.
+                        Бери участь в акції та вигравай телевізори, стереосистеми та домашні кінотеатри.
+                        Вболівай вдома , як на стадіоні.Домашній стадіон, який пам'ятає легендарні перемоги та буденні ляпи.
+                        Де ти готуєшся до нового дня, як до наступного матчу.
+                        Тут все просякнуте твоєю енергетикою.
+                        Бо твій дім - твій домашній стадіон.
+                        Цієї зими ми допоможемо прокачати його для перегляд спору.
+                        Бери участь в акції та вигравай телевізори, стереосистеми та домашні кінотеатри.
+                        Вболівай вдома , як на стадіоні.
+                    p.
+                        Домашній стадіон, який пам'ятає легендарні перемоги та буденні ляпи.
+                        Де ти готуєшся до нового дня, як до наступного матчу.
+                        Тут все просякнуте твоєю енергетикою. Бо твій дім - твій домашній стадіон.
+                        Цієї зими ми допоможемо прокачати його для перегляд спору.
+                        Бери участь в акції та вигравай телевізори, стереосистеми та домашні кінотеатри.
+                        Вболівай вдома , як на стадіоні.Домашній стадіон, який пам'ятає легендарні перемоги та буденні ляпи.
+                        Де ти готуєшся до нового дня, як до наступного матчу.
+                        Тут все просякнуте твоєю енергетикою.
+                        Бо твій дім - твій домашній стадіон.
+                        Цієї зими ми допоможемо прокачати його для перегляд спору.
+                        Бери участь в акції та вигравай телевізори, стереосистеми та домашні кінотеатри.
+                        Вболівай вдома , як на стадіоні.
+                    p.
+                        Домашній стадіон, який пам'ятає легендарні перемоги та буденні ляпи.
+                        Де ти готуєшся до нового дня, як до наступного матчу.
+                        Тут все просякнуте твоєю енергетикою. Бо твій дім - твій домашній стадіон.
+                        Цієї зими ми допоможемо прокачати його для перегляд спору.
+                        Бери участь в акції та вигравай телевізори, стереосистеми та домашні кінотеатри.
+                        Вболівай вдома , як на стадіоні.Домашній стадіон, який пам'ятає легендарні перемоги та буденні ляпи.
+                        Де ти готуєшся до нового дня, як до наступного матчу.
+                        Тут все просякнуте твоєю енергетикою.
+                        Бо твій дім - твій домашній стадіон.
+                        Цієї зими ми допоможемо прокачати його для перегляд спору.
+                        Бери участь в акції та вигравай телевізори, стереосистеми та домашні кінотеатри.
+                        Вболівай вдома , як на стадіоні.
+                    p.
+                        Домашній стадіон, який пам'ятає легендарні перемоги та буденні ляпи.
+                        Де ти готуєшся до нового дня, як до наступного матчу.
+                        Тут все просякнуте твоєю енергетикою. Бо твій дім - твій домашній стадіон.
+                        Цієї зими ми допоможемо прокачати його для перегляд спору.
+                        Бери участь в акції та вигравай телевізори, стереосистеми та домашні кінотеатри.
+                        Вболівай вдома , як на стадіоні.Домашній стадіон, який пам'ятає легендарні перемоги та буденні ляпи.
+                        Де ти готуєшся до нового дня, як до наступного матчу.
+                        Тут все просякнуте твоєю енергетикою.
+                        Бо твій дім - твій домашній стадіон.
+                        Цієї зими ми допоможемо прокачати його для перегляд спору.
+                        Бери участь в акції та вигравай телевізори, стереосистеми та домашні кінотеатри.
+                        Вболівай вдома , як на стадіоні.
+
+
 .wrapper-main
     section.participation
         .participation__container
@@ -60,70 +260,70 @@ section.home
                     img(src='img/faq-icon4.svg' alt='icon').faq__item-image
                     p.faq__item-text Бери участь у фіналi #[br] розіграшу призів
     section.task
-        .task__container
-            h2.task__title Завдання
-            .task__info.leftImageHidden
+        .tasks__container
+            h2.tasks__title Завдання
+            .tasks__info.leftImageHidden
                 .task-wrap
-                    .task__slider#task-slider
-                        .task__slider-item
-                            .task__slider-wrapper
-                                .task__slider-info
-                                    .task__slider-time
+                    .tasks__slider#tasks-slider
+                        .tasks__slider-item
+                            .tasks__slider-wrapper
+                                .tasks__slider-info
+                                    .tasks__slider-time
                                         p.time 14.02 - 25.02
                                         p.text Prematch
-                                    .task__slider-text Сделать ставку на точный счет в основное время, 2 матча - 2 ставки (прематч, последняя ставка)
-                                    .task__slider-prize
+                                    .tasks__slider-text Сделать ставку на точный счет в основное время, 2 матча - 2 ставки (прематч, последняя ставка)
+                                    .tasks__slider-prize
                                         img(src='img/present-icon.svg' alt='prize-icon')
                                         p 1 win bet - СБР 500 UAH, 2 win bets  - СБР 1500 UAH
-                        .task__slider-item
-                            .task__slider-wrapper
-                                .task__slider-info
-                                    .task__slider-time
+                        .tasks__slider-item
+                            .tasks__slider-wrapper
+                                .tasks__slider-info
+                                    .tasks__slider-time
                                         p.time 14.02 - 25.02
                                         p.text Prematch
-                                    .task__slider-text Сделать ставку на точный счет в основное время, 2 матча - 2 ставки (прематч, последняя ставка)
-                                    .task__slider-prize
+                                    .tasks__slider-text Сделать ставку на точный счет в основное время, 2 матча - 2 ставки (прематч, последняя ставка)
+                                    .tasks__slider-prize
                                         img(src='img/present-icon.svg' alt='prize-icon')
                                         p 1 win bet - СБР 500 UAH, 2 win bets  - СБР 1500 UAH
-                        .task__slider-item
-                            .task__slider-wrapper
-                                .task__slider-info
-                                    .task__slider-time
+                        .tasks__slider-item
+                            .tasks__slider-wrapper
+                                .tasks__slider-info
+                                    .tasks__slider-time
                                         p.time 14.02 - 25.02
                                         p.text Prematch
-                                    .task__slider-text Сделать ставку на точный счет в основное время, 2 матча - 2 ставки (прематч, последняя ставка)
-                                    .task__slider-prize
+                                    .tasks__slider-text Сделать ставку на точный счет в основное время, 2 матча - 2 ставки (прематч, последняя ставка)
+                                    .tasks__slider-prize
                                         img(src='img/present-icon.svg' alt='prize-icon')
                                         p 1 win bet - СБР 500 UAH, 2 win bets  - СБР 1500 UAH
-                        .task__slider-item
-                            .task__slider-wrapper
-                                .task__slider-info
-                                    .task__slider-time
+                        .tasks__slider-item
+                            .tasks__slider-wrapper
+                                .tasks__slider-info
+                                    .tasks__slider-time
                                         p.time 14.02 - 25.02
                                         p.text Prematch
-                                    .task__slider-text Сделать ставку на точный счет в основное время, 2 матча - 2 ставки (прематч, последняя ставка)
-                                    .task__slider-prize
+                                    .tasks__slider-text Сделать ставку на точный счет в основное время, 2 матча - 2 ставки (прематч, последняя ставка)
+                                    .tasks__slider-prize
                                         img(src='img/present-icon.svg' alt='prize-icon')
                                         p 1 win bet - СБР 500 UAH, 2 win bets  - СБР 1500 UAH
-                        .task__slider-item
-                            .task__slider-wrapper
-                                .task__slider-info
-                                    .task__slider-time
+                        .tasks__slider-item
+                            .tasks__slider-wrapper
+                                .tasks__slider-info
+                                    .tasks__slider-time
                                         p.time 14.02 - 25.02
                                         p.text Prematch
-                                    .task__slider-text Сделать ставку на точный счет в основное время, 2 матча - 2 ставки (прематч, последняя ставка)
-                                    .task__slider-prize
+                                    .tasks__slider-text Сделать ставку на точный счет в основное время, 2 матча - 2 ставки (прематч, последняя ставка)
+                                    .tasks__slider-prize
                                         img(src='img/present-icon.svg' alt='prize-icon')
                                         p 1 win bet - СБР 500 UAH, 2 win bets  - СБР 1500 UAH
 
-                        .task__slider-item
-                            .task__slider-wrapper
-                                .task__slider-info
-                                    .task__slider-time
+                        .tasks__slider-item
+                            .tasks__slider-wrapper
+                                .tasks__slider-info
+                                    .tasks__slider-time
                                         p.time 14.02 - 25.02
                                         p.text Prematch
-                                    .task__slider-text Сделать ставку на точный счет в основное время, 2 матча - 2 ставки (прематч, последняя ставка)
-                                    .task__slider-prize
+                                    .tasks__slider-text Сделать ставку на точный счет в основное время, 2 матча - 2 ставки (прематч, последняя ставка)
+                                    .tasks__slider-prize
                                         img(src='img/present-icon.svg' alt='prize-icon')
                                         p 1 win bet - СБР 500 UAH, 2 win bets  - СБР 1500 UAH
                 .task-controls
@@ -135,11 +335,11 @@ section.home
                     .active-slide 1
                     span /
                     .all-slide 8
-                a(href='#').task__button Виконати
-                .task__side Виконано: 0/3
-            details.task__details
-                summary.task__summary Детальніше
-                .task__details-text
+                a(href='#').tasks__button Виконати
+                .tasks__side Виконано: 0/3
+            details.tasks__details
+                summary.tasks__summary Детальніше
+                .tasks__details-text
                     p.
                         Домашній стадіон, який пам'ятає легендарні перемоги та буденні ляпи.
                         Де ти готуєшся до нового дня, як до наступного матчу.
