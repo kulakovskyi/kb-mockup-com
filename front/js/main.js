@@ -2,10 +2,6 @@
 let prizesLeftArrow = document.querySelector('.controls-left'),
     prizesRightArrow = document.querySelector('.controls-right');
 
-// left and right image slider
-const sliderInfo = document.querySelector('.tasks__info');
-
-
 //counter slide on media 890
 const allSlides = document.querySelector('.all-slide')
 const counterSlide = document.querySelector('.active-slide')
@@ -119,13 +115,13 @@ function slider(id, itemSelector, leftArrow, rightArrow, autoplay, config) {
                         toggleIndex(activeIndIndex - 1)
                         count--
                         counterSlide.innerHTML = count;
-                        sliderInfo.classList.remove('rightImageHidden')
+
 
                     } else if (startX - x > 30) {
                         toggleIndex(activeIndIndex + 1)
                         count++
                         counterSlide.innerHTML = count;
-                        sliderInfo.classList.remove('leftImageHidden')
+
                     }
 
                     inner = inner || el.querySelector('.slider-inner')
@@ -135,48 +131,30 @@ function slider(id, itemSelector, leftArrow, rightArrow, autoplay, config) {
                 if (activeIndIndex === 0) {
                     count = 1
                     counterSlide.innerHTML = count;
-                    sliderInfo.classList.add('leftImageHidden')
+
                 }
                 if (activeIndIndex === items.length - 1) {
                     count = items.length;
                     counterSlide.innerHTML = count;
-                    sliderInfo.classList.add('rightImageHidden')
+
                 }
             }
 
             rightArrow.addEventListener('click', () => {
                 toggleIndex(activeIndIndex + 1)
-                obj.next()
+                console.log(activeIndIndex)
+                //obj.next()
                 count++
                 counterSlide.innerHTML = count;
-                if (activeIndIndex >= 0) {
-                    sliderInfo.classList.remove('leftImageHidden')
-                } else {
-                    sliderInfo.classList.add('leftImageHidden')
-                }
-
-                if (activeIndIndex === items.length - 1) {
-                    sliderInfo.classList.add('rightImageHidden')
-                } else {
-                    sliderInfo.classList.remove('rightImageHidden')
-                }
 
             })
 
             leftArrow.addEventListener('click', () => {
                 toggleIndex(activeIndIndex - 1)
-                obj.prev()
+                console.log(activeIndIndex)
+                //obj.prev()
                 count--
                 counterSlide.innerHTML = count;
-                if (activeIndIndex === items.length - 1) {
-                    sliderInfo.classList.add('rightImageHidden')
-                } else {
-                    sliderInfo.classList.remove('rightImageHidden')
-                }
-                if (activeIndIndex <= 0) {
-                    sliderInfo.classList.add('leftImageHidden')
-                }
-
             })
 
             window.removeEventListener('resize', onResize);
