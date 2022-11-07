@@ -1,4 +1,31 @@
-
+@media screen and (max-width: 1760px)
+  .tasks
+    &::after
+      content: none
+  .prize
+    background: #12243F
+    position: relative
+    &::after
+      content: ''
+      position: absolute
+      width: 100%
+      left: 0
+      bottom: 0
+      height: 600px
+      z-index: 0
+      background: linear-gradient(180deg, rgba(13, 19, 81, 0) 0%, #0D1351 100%)
+    &__container
+      position: relative
+      z-index: 2
+    &__title
+      margin: 0
+    .prize-controls
+      top: 305px
+    &__slider
+      &-item
+        transform: scale(0.8)
+        &:not(:last-child)
+          margin: 0 -26px 0 0
 
 
 @media screen and (max-width: 1510px)
@@ -12,6 +39,15 @@
     &__prize5
       transform-origin: center
       transform: scale(0.8)
+
+@media screen and (max-width: 1390px)
+  .tasks
+    &__slider
+      &-bonus
+        transform-origin: right center
+        transform: scale(0.85)
+      &-info
+        margin: 230px 2px 0 0
 
 @media screen and (max-width: 1290px)
   .home
@@ -41,6 +77,28 @@
       &::after
         bottom: -112px
 
+@media screen and (max-width: 1250px)
+  .tasks
+    .task-controls
+      top: 230px
+      left: 50%
+      transform: translateX(-50%)
+    &__container
+      padding: 85px 41px 70px
+    &__slider
+      margin: 0 0 80px 0
+      &-bonus
+        transform: scale(1)
+      &-wrap
+        flex-direction: column
+        align-items: center
+      &-info
+        max-width: 750px
+        margin: 163px 0 95px 0
+        display: flex
+        flex-direction: column
+        align-items: center
+
 @media screen and (max-width: 1200px)
   .home
     &__prize
@@ -59,6 +117,11 @@
       right: -86px
     &__prize5
       left: -418px
+  .world
+    &__title
+      br
+        display: inline-block
+
 
 
 
@@ -183,6 +246,65 @@
         &::before,
         &::after
           height: 70px
+  .tasks
+    &__title
+      font-size: 54px
+      line-height: 70px
+      &::before
+        right: -105px
+      &::after
+        left: -105px
+    &__slider
+      &-text
+        font-size: 50px
+        line-height: 72px
+  .prize
+    &__slider
+      margin: 0 0 22px 0
+    &__title
+      font-size: 54px
+      line-height: 70px
+      &::before
+        right: -105px
+      &::after
+        left: -105px
+  .final
+    &__title
+      font-size: 54px
+      line-height: 70px
+      margin: 0 0 75px 0
+      &::before
+        right: -105px
+      &::after
+        left: -105px
+    &__table
+      &-subtitle
+        font-size: 30px
+        line-height: 38px
+        margin: 0 0 25px 0
+  .resultTable
+    margin: 0 0 35px 0
+    &__body
+      &-number
+        padding-left: 30px
+    &__head
+      &-place
+        padding-right: 0
+        padding-left: 0
+  .world
+    padding: 0 0 280px 0
+    &__details-one
+      margin: 0 0 15px 0
+    &__details-two
+      margin: 0 0 155px 0
+    &__title
+      font-size: 54px
+      line-height: 70px
+      margin: 0 0 45px 0
+    &__button
+      padding: 26px 150px 24px
+      font-size: 24px
+      line-height: 29px
 
 
 @media screen and (max-width: 845px)
@@ -215,6 +337,14 @@
         right: -85px
       &::after
         left: -85px
+  .tasks
+    &__slider
+      &-bonus
+        transform-origin: center
+        transform: scale(0.8)
+        margin: -100px 0 0 0
+    &__details
+      margin: -100px 0 0 0
 
 @media screen and (max-width: 710px)
   .home
@@ -336,8 +466,134 @@
       font-size: 18px
       line-height: 23px
       padding: 19px 103px 17px
+  .tasks
+    padding: 75px 15px 40px 15px
+    .task-controls
+      top: 110px
+      transform: translateX(-50%) scale(0.7)
+      .controls-left,
+      .task-counter
+        margin: 0 20px 0 0
+    &__container
+      padding: 40px 20px 30px
+    &__title
+      font-size: 28px
+      line-height: 35px
+      margin: 0 0 40px 0
+      &::before,
+      &::after
+        width: 62px
+        height: 27px
+      &::before
+        right: -74px
+      &::after
+        left: -74px
+    &__slider
+      &-text
+        font-size: 30px
+        line-height: 36px
+        margin: 0 0 30px 0
+      &-button
+        font-size: 18px
+        line-height: 23px
+        padding: 19px 92px 17px
+      &-info
+        margin: 109px 0 61px 0
+      &-bonus
+        transform: scale(0.55)
+        margin: -199px 0 0 0
+    &__details
+      margin: -228px 0 0 0
+  .prize
+    padding: 0px 0 60px 0
+    .prize-controls
+      top: 136px
+      width: 102%
+    .controls-right-2,
+    .controls-left-2
+      transform: scale(0.55)
+    &__title
+      font-size: 28px
+      line-height: 35px
+      &::before,
+      &::after
+        width: 62px
+        height: 27px
+      &::before
+        right: -74px
+      &::after
+        left: -74px
+    &__details
+      margin-top: -120px
+    &__slider
+      margin-top: -130px
+      &-item
+        transform: scale(0.5)
+        &:not(:last-child)
+          margin: 0 -26px 0 0
+  .final
+    &__container
+      padding: 0 15px
+    &__title
+      font-size: 28px
+      line-height: 35px
+      margin: 0 0 60px 0
+      &::before,
+      &::after
+        width: 62px
+        height: 27px
+      &::before
+        right: -74px
+      &::after
+        left: -74px
+    &__table
+      &-subtitle
+        font-size: 20px
+        line-height: 26px
+        margin: 0 0 15px 0
+  .resultTable
+    margin: 0 0 20px 0
+    padding: 20px 4px 15px 4px
 
+    &__head
+      &-check,
+      &-points,
+      &-prize,
+      &-place
+        font-size: 14px
+        line-height: 18px
+        margin: 0 0 15px 0
+    &__body
+      padding: 0 5px 0 0
+      &-number,
+      &-check,
+      &-points,
+      &-prize
+        font-size: 12px
+        line-height: 54px
+      &-prize
+        padding: 0
+      &-number
+        padding-left: 15px
 
+    .resultTable__body-number:after
+      min-width: 15px !important
+      max-width: 15px !important
+      margin: 6px 0 0 5px !important
+  .world
+    padding: 0 0 200px 0
+    &__details-two
+      margin: 0 0 50px 0
+    &__title
+      font-size: 36px
+      line-height: 47px
+      margin: 0 0 50px 0
+      img
+        max-width: 30px
+    &__button
+      font-size: 18px
+      line-height: 23px
+      padding: 19px 100px 17px
 
 @media screen and (max-width: 535px)
   .home
@@ -348,6 +604,10 @@
         top: -60px
     &__info
       padding: 46px 15px 104px
+  .world
+    &__title
+      br
+        display: none
 
 @media screen and (max-width: 430px)
   .home
@@ -360,6 +620,18 @@
         bottom: -100px
     &__info
       padding: 46px 15px 80px
+  .tasks
+    .task-controls
+      top: 85px
+      transform: translateX(-50%) scale(0.6)
+    &__details
+      margin: -271px 0 0 0
+    &__slider
+      &-info
+        margin: 69px 0 61px 0
+      &-bonus
+        transform: scale(0.45)
+        margin: -250px 0 0 0
 
 @media screen and (max-width: 390px)
   .home
@@ -388,6 +660,49 @@
       text-align: center
       padding: 19px 30px 17px
       width: 91%
+  .tasks
+    .task-controls
+      top: 80px
+      transform: translateX(-50%) scale(0.5)
+    &__details
+      margin: -298px 0 0 0
+    &__slider
+      &-button
+        padding: 19px 20px 17px
+        width: 100%
+        text-align: center
+      &-bonus
+        transform: scale(0.4)
+        margin: -276px 0 0 0
+      &-info
+        margin: 61px 0 61px 0
+  .prize
+    .prize-controls
+      width: 112%
+    .controls-right-2,
+    .controls-left-2
+      transform: scale(0.45)
+  .resultTable
+    &__body
+      &-number,
+      &-check,
+      &-points,
+      &-prize
+        font-size: 9px
+    &__head
+      &-check,
+      &-points,
+      &-prize,
+      &-place
+        font-size: 10px
+        line-height: 12px
+        margin: 0px 0 15px 0
+  .world
+    &__button
+      padding: 19px 15px 17px
+      width: 100%
+
+
 
 @media screen and (max-width: 350px)
   .home
